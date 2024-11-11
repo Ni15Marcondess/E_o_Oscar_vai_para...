@@ -23,6 +23,7 @@ Q:
 ---
 
 * A série de filmes Toy Story ganhou um Oscar em quais anos? 👢
+  
 R: Já, o Toy Story 3 e 4 nos anos de 2011 e 2020
 
 Q:
