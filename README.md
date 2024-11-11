@@ -13,7 +13,7 @@ select count(*) from indicados_ao_oscar where nome_do_indicado like "%Natalie Po
 
 * Amy Adams já ganhou algum Oscar? 🎭
 
-R: Não, nenhum.
+R: Não.
 
 Q:
 ```sql
@@ -24,7 +24,7 @@ Q:
 
 * A série de filmes Toy Story ganhou um Oscar em quais anos? 👢
   
-R: Já, o Toy Story 3 e 4 nos anos de 2011 e 2020
+R: Sim, o Toy Story 3 e 4 nos anos de 2011 e 2020.
 
 Q:
 ```sql
@@ -35,7 +35,7 @@ Q:
 
 * A partir de que ano que a categoria "Actress" deixa de existir? 🎀
 
-R: A partir de 1976 não há dados de Actress.
+R: A partir de 1976 não tem dados de Actress.
 
 Q:
 ```sql
@@ -92,5 +92,34 @@ Q:
 select * from indicados_ao_oscar where nome_do_filme = "central station";
 ```
 
+* Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
+
+R: Escolhi três filmes de animação de que gosto muito!
+
+Q:
+```sql
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
+VALUES (2004,2005,97,'Melhor Filme de Animação','Stephen Hillenburg','Bob Esponja: O Filme','true');
+
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) 
+VALUES (1999,2000,97,'Melhor Filme de Animação','Brad Bird','O Gigante de Ferro','true');
+
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor)
+VALUES (2009, 2010, '82nd Academy Awards', 'NONE', 'Coraline', 'Coraline', 'false'),
+```
+
 ---
+
+* Denzel Washington já ganhou algum Oscar?
+
+R: Sim dois, em 'Glory' e em 'Training Day'.
+
+Q:
+```sql
+select * from indicados_ao_oscar where nome_do_indicado = "Denzel Washington" and vencedor = "true";
+```
+
+---
+
+
 
