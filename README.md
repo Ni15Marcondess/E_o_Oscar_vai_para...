@@ -92,7 +92,7 @@ Q:
 select * from indicados_ao_oscar where nome_do_filme = "central station";
 ```
 
-* Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser.
+* Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. ✨
 
 R: Escolhi três filmes de animação de que gosto muito!
 
@@ -110,7 +110,7 @@ VALUES (2009, 2010, '82nd Academy Awards', 'NONE', 'Coraline', 'Coraline', 'fals
 
 ---
 
-* Denzel Washington já ganhou algum Oscar?
+* Denzel Washington já ganhou algum Oscar? 🌇
 
 R: Sim dois, em 'Glory' e em 'Training Day'.
 
